@@ -1,6 +1,7 @@
 body{
-    background-color: #1b1b32;
-    color: white;
+    margin: 0.5rem 0;
+    /* background-color: #1b1b32;
+    color: white; */
 }
 label{
     display: block;
