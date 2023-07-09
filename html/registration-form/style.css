@@ -1,0 +1,8 @@
+body{
+    background-color: #1b1b32;
+    color: white;
+}
+label{
+    display: block;
+    margin: 0.5rem 0;
+}

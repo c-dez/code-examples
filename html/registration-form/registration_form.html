@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>registration form</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <p>Please fill out this form with the required 
+        information
+    </p>
+
+    <form >
+        <fieldset><!--text inputs-->
+            <label for="first-name">Enter name: 
+                <input  type="text" id="first-name" placeholder="first name">
+            </label>
+            <label for="last-name">Enter Last Name:
+                <input  type="text" id="last-name" placeholder="last name">
+            </label>
+            <label for="email">Enter Email: 
+                <input  type="email" id="email" placeholder="example@email.com">
+            </label>
+            <label for="password">Create Password:
+                <input  pattern="[a-z0-9]{4,}"  type="password" id="password"
+                placeholder="password 4  characteres"> <!--patern {4,} minimo 4 digitos-->
+            </label>
+
+        </fieldset>
+        
+        <fieldset></fieldset>
+        <fieldset></fieldset>
+        <button>submit</button>
+    </form>
+    
+</body>
+</html>
