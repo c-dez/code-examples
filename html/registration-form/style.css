@@ -70,3 +70,8 @@ input[type="file"]{
 label[for="terms"]>a{
     color:#dfdfe2;
 }
+/*styling validations, con un pseudo selector*/
+input[type="email"]:invalid{
+    border-color: red;
+}
+
