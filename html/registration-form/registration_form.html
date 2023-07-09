@@ -15,56 +15,65 @@
     <form >
         <fieldset><!--text inputs-->
             <label for="first-name">Enter name: 
-                <input  type="text" id="first-name" placeholder="first name">
+                <input name="first-name" type="text" id="first-name" placeholder="first name">
             </label>
             <label for="last-name">Enter Last Name:
-                <input  type="text" id="last-name" placeholder="last name">
+                <input name="last-name" type="text" id="last-name" placeholder="last name">
             </label>
             <label for="email">Enter Email: 
-                <input  type="email" id="email" placeholder="example@email.com">
+                <input name="email" type="email" id="email" placeholder="example@email.com">
             </label>
             <label for="password">Create Password:
-                <input  pattern="[a-z0-9]{4,}"  type="password" id="password"
+                <input name="password" pattern="[a-z0-9]{4,}"  type="password" id="password"
                 placeholder="password 4  characteres"> <!--patern {4,} minimo 4 digitos-->
             </label>
 
         </fieldset>
         <fieldset><!--radial & checkbox-->
             <label for="personal">Personal Account
-                <input type="radio" name="account" id="personal" value="account-type">
+                <input class="inLine" type="radio" name="account" id="personal" value="account-type">
             </label>
             <label for="business">
-                <input type="radio" name="account" id="business" value="account-type">Business Account
+                <input class="inLine" type="radio" name="account" id="business" value="account-type">Business Account
             </label>
             <label for="terms">I accept the 
                 <a href="https://www.freecodecamp.org/news/terms-of-service/">
                     terms and conditions</a>
-                <input type="checkbox" name="" id="terms">
+                <input class="inLine" type="checkbox" name="terms" id="terms">
             </label>
 
         </fieldset>
         <fieldset><!--type="file" & minimum max age age-->
             <label for="file">upload a file
-            <input type="file" name="" id="file">
+            <input type="file" name="file" id="file" value="file">
 
             </label>
             <label for="age">Input your age: 
-                <input type="number" min="13" max="99" id="age" placeholder="min 13">
+                <input name="age" type="number" min="13" max="99" id="age" placeholder="min 13"
+                value="age">
 
             </label>
 
-            <label for="select">How did you heard about us? <!--select-->
-                <select name="" id="select">
+            <label for="referrer">How did you heard about us? <!--select-->
+                <select name="referrer" id="referrer" value="referrer">
                     <option value="">(select one)</option>
                     <option value="1">News</option>
                     <option value="2">Youtube</option>
                     <option value="3">Forum</option>
                     <option value="4">Other</option>
                 </select>
+
             </label>
 
+            <label for="bio">Provide a Bio:
+                <textarea  name="bio" id="bio" cols="30" rows="3"
+                value="bio" placeholder="I like to code in the beach...">
+            </textarea>
+            </label>
+                
+
         </fieldset>
-        <button>submit</button>
+        <button name="submit">Submit</button>
     </form>
     
 </body>
